@@ -1,30 +1,32 @@
 {
-  "name": "identity-core",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    "hardhat": "^2.12.2"
-  },
-  "dependencies": {
-    "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
-    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
-    "@nomiclabs/hardhat-ethers": "^2.2.1",
-    "@nomiclabs/hardhat-etherscan": "^3.1.2",
-    "@openzeppelin/contracts": "^4.8.0",
-    "@typechain/ethers-v5": "^10.1.1",
-    "@typechain/hardhat": "^6.1.4",
-    "chai": "^4.3.6",
-    "ethers": "^5.7.2",
-    "hardhat-gas-reporter": "^1.0.2",
-    "solidity-coverage": "^0.7.22",
-    "ts-node": "^10.9.1",
-    "typechain": "^8.1.1",
-    "typescript": "^4.8.4"
-  },
-  "scripts": {
-    "compile": "npx hardhat compile",
-    "run:cli_auction": "npx hardhat run scripts/cli_auction.ts",
-    "run:cli_nft": "npx hardhat run scripts/cli_nft.ts",
-    "run:cli_usdt": "npx hardhat run scripts/cli_usdt.ts",
-    "run:main": "npx hardhat main --network EthereumGoerli"
-  }
+    "name": "identity-core",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "hardhat": "^2.12.2"
+    },
+    "author": "IdLabs",
+    "license": "ISC",
+    "dependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+        "@nomiclabs/hardhat-ethers": "^2.2.1",
+        "@nomiclabs/hardhat-etherscan": "^3.1.2",
+        "@openzeppelin/contracts": "^4.8.0",
+        "@typechain/ethers-v5": "^10.1.1",
+        "@typechain/hardhat": "^6.1.4",
+        "chai": "^4.3.6",
+        "ethers": "^5.7.2",
+        "hardhat-gas-reporter": "^1.0.2",
+        "solidity-coverage": "^0.7.22",
+        "ts-node": "^10.9.1",
+        "typechain": "^8.1.1",
+        "typescript": "^4.8.4"
+    },
+    "scripts": {
+        "compile": "npx hardhat compile",
+        "run:cli_auction": "npx hardhat run scripts/cli_auction.ts",
+        "run:cli_nft": "npx hardhat run scripts/cli_nft.ts",
+        "run:cli_usdt": "npx hardhat run scripts/cli_usdt.ts",
+        "run:main": "npx hardhat main --network EthereumGoerli"
+    }
 }
