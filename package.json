@@ -1,7 +1,6 @@
 {
     "name": "identity-core",
     "devDependencies": {
-        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
         "hardhat": "^2.12.2"
     },
     "author": "IdLabs",
@@ -14,7 +13,9 @@
         "@openzeppelin/contracts": "^4.8.0",
         "@typechain/ethers-v5": "^10.1.1",
         "@typechain/hardhat": "^6.1.4",
+        "@types/mocha": "^10.0.1",
         "chai": "^4.3.6",
+        "ethereum-waffle": "^4.0.10",
         "ethers": "^5.7.2",
         "hardhat-gas-reporter": "^1.0.2",
         "solidity-coverage": "^0.7.22",
@@ -24,6 +25,7 @@
     },
     "scripts": {
         "compile": "npx hardhat compile",
+        "test": "npm run compile && TRACK_GAS=true hardhat test",
         "run:cli_auction": "npx hardhat run scripts/cli_auction.ts",
         "run:cli_nft": "npx hardhat run scripts/cli_nft.ts",
         "run:cli_usdt": "npx hardhat run scripts/cli_usdt.ts",
